@@ -1,0 +1,996 @@
+
+
+
+#
+
+
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+#
+<--- Last few GCs --->
+#
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+
+
+----- Native stack trace -----
+<--- Last few GCs --->
+
+#
+
+
+----- Native stack trace -----
+ 1: 00007FF7910D711D node::SetCppgcReference+17725
+<--- JS stacktrace --->
+[55864:0000022C97B15000]     1404 ms: Scavenge 6.4 (8.0) -> 6.4 (10.8) MB, pooled: 0 MB, 0.77 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+ 2: 00007FF790FB181F node::TriggerNodeReport+73231
+
+
+ 1: 00007FF7910D711D 
+ 3: 00007FF7922295C6 v8::base::FatalOOM+54
+
+
+ 2: 00007FF790FB181F 
+ 4: 00007FF791BC0CA3 v8::Isolate::ReportExternalAllocationLimitReached+147
+
+<--- JS stacktrace --->
+ 3: 00007FF7922295C6 
+ 5: 00007FF791BAD8D6 v8::Function::Experimental_IsNopFunction+2870
+#
+
+ 4: 00007FF791BC0CA3 
+ 6: 00007FF7919FAA20 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+31456
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+FATAL ERROR: AlignedAlloc Allocation failed - process out of memory
+ 5: 00007FF791BAD8D6 
+ 7: 00007FF7919C29DA v8::CpuProfileNode::GetScriptResourceNameStr+3146
+#
+----- Native stack trace -----
+ 6: 00007FF7919FAA20 
+ 8: 00007FF7919C2FF0 v8::CpuProfileNode::GetScriptResourceNameStr+4704
+----- Native stack trace -----
+
+ 7: 00007FF7919C29DA 
+ 9: 00007FF7919C2CF5 v8::CpuProfileNode::GetScriptResourceNameStr+3941
+
+ 1: 00007FF7910D711D node::SetCppgcReference+17725
+ 8: 00007FF7919C2FF0 
+10: 00007FF7919B26DB v8::FixedArray::Length+126619
+ 1: 00007FF7910D711D node::SetCppgcReference+17725
+ 2: 00007FF79103A138 SSL_get_quiet_shutdown+92344
+ 9: 00007FF7919C2CF5 
+ 2: 00007FF790FB181F node::TriggerNodeReport+73231
+11: 00007FF7919B1CAA v8::FixedArray::Length+124010
+ 3: 00007FF791BC0C51 v8::Isolate::ReportExternalAllocationLimitReached+65
+10: 00007FF7919B26DB 
+12: 00007FF791A08782 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+88130
+ 3: 00007FF7922295C6 v8::base::FatalOOM+54
+11: 00007FF7919B1CAA 
+ 4: 00007FF791BAD8D6 v8::Function::Experimental_IsNopFunction+2870
+13: 00007FF791A6CAED v8::base::CPU::has_sse41+74493
+ 4: 00007FF791BC0CA3 v8::Isolate::ReportExternalAllocationLimitReached+147
+ 5: 00007FF79167F77F v8::internal::Version::GetString+11407
+12: 00007FF791A08782 
+14: 00007FF79169B9D5 v8::base::AddressSpaceReservation::AddressSpaceReservation+11461
+ 5: 00007FF791BAD8D6 v8::Function::Experimental_IsNopFunction+2870
+ 6: 00007FF7917B20DA v8::MemorySpan<std::basic_string_view<char,std::char_traits<char> > const >::end+54330
+13: 00007FF791A6CAED 
+15: 00007FF791BB68A1 v8::Isolate::Initialize+433
+ 6: 00007FF7919FAA20 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+31456
+ 7: 00007FF7917B1B3A v8::MemorySpan<std::basic_string_view<char,std::char_traits<char> > const >::end+52890
+14: 00007FF79169B9D5 
+16: 00007FF79111696D node::NewContext+397
+ 7: 00007FF7919C29DA v8::CpuProfileNode::GetScriptResourceNameStr+3146
+ 8: 00007FF7917AFD00 v8::MemorySpan<std::basic_string_view<char,std::char_traits<char> > const >::end+45152
+15: 00007FF791BB68A1 
+17: 00007FF790EEE58A X509_CRL_get_meth_data+146010
+ 8: 00007FF7919C2FF0 v8::CpuProfileNode::GetScriptResourceNameStr+4704
+ 9: 00007FF791A28559 v8::Isolate::GetHeapProfiler+119017
+16: 00007FF79111696D 
+18: 00007FF790EF3FEA X509_CRL_get_meth_data+169146
+ 9: 00007FF7919C2CF5 v8::CpuProfileNode::GetScriptResourceNameStr+3941
+10: 00007FF791B9BAA7 v8::SharedValueConveyor::SharedValueConveyor+503575
+17: 00007FF790EEE58A 
+19: 00007FF790EE88F5 X509_CRL_get_meth_data+122309
+10: 00007FF7919A87D3 v8::FixedArray::Length+85907
+11: 00007FF79177A070 v8::base::Thread::StartSynchronously+164576
+18: 00007FF790EF3FEA 
+20: 00007FF791137463 uv_poll_stop+291
+11: 00007FF7919E8D36 v8::CpuProfileNode::GetScriptResourceNameStr+159654
+12: 00007FF79178E007 v8::base::Thread::StartSynchronously+246391
+21: 00007FF792934C2E inflateValidate+159742
+19: 00007FF790EE88F5 
+12: 00007FF7919E89C0 v8::CpuProfileNode::GetScriptResourceNameStr+158768
+13: 00007FF79177320C v8::base::Thread::StartSynchronously+136316
+20: 00007FF791137463 
+22: 00007FFB8131E8D7 BaseThreadInitThunk+23
+13: 00007FF7919E8108 v8::CpuProfileNode::GetScriptResourceNameStr+156536
+14: 00007FF791B26650 v8::SharedValueConveyor::SharedValueConveyor+23232
+21: 00007FF792934C2E 
+23: 00007FFB823EC3FC RtlUserThreadStart+44
+14: 00007FF7919E7861 v8::CpuProfileNode::GetScriptResourceNameStr+154321
+15: 00007FF791B2BDB8 v8::SharedValueConveyor::SharedValueConveyor+45608
+22: 00007FFB8131E8D7 BaseThreadInitThunk+23
+15: 00007FF7916B6787 v8::base::AddressSpaceReservation::AddressSpaceReservation+121463
+16: 00007FF791BA85E9 v8::ScriptCompiler::CompileFunctionInternal+697
+23: 00007FFB823EC3FC RtlUserThreadStart+44
+16: 00007FF7916B80E6 v8::base::AddressSpaceReservation::AddressSpaceReservation+127958
+17: 00007FF791BA8324 v8::ScriptCompiler::CompileFunction+84
+17: 00007FF7916B3A07 v8::base::AddressSpaceReservation::AddressSpaceReservation+109815
+18: 00007FF791062345 node::OnFatalError+164309
+18: 00007FF7916B87AF v8::base::AddressSpaceReservation::AddressSpaceReservation+129695
+19: 00007FF791061BBD node::OnFatalError+162381
+19: 00007FF7916933C4 v8::internal::Version::GetString+92372
+20: 00007FF79105FD81 node::OnFatalError+154641
+20: 00007FF7916AB9AA v8::base::AddressSpaceReservation::AddressSpaceReservation+76954
+21: 00007FF731B8FA64 
+21: 00007FF79169D33B v8::base::AddressSpaceReservation::AddressSpaceReservation+17963
+22: 00007FF791A6CEE9 v8::base::CPU::has_sse41+75513
+23: 00007FF79169B9D5 v8::base::AddressSpaceReservation::AddressSpaceReservation+11461
+24: 00007FF791BB68A1 v8::Isolate::Initialize+433
+25: 00007FF79111696D node::NewContext+397
+26: 00007FF790EEE58A X509_CRL_get_meth_data+146010
+27: 00007FF790EF3FEA X509_CRL_get_meth_data+169146
+28: 00007FF790EE88F5 X509_CRL_get_meth_data+122309
+29: 00007FF791137463 uv_poll_stop+291
+30: 00007FF792934C2E inflateValidate+159742
+31: 00007FFB8131E8D7 BaseThreadInitThunk+23
+32: 00007FFB823EC3FC RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+
+<--- JS stacktrace --->
+
+
+
+#
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+#
+----- Native stack trace -----
+
+ 1: 00007FF7910D711D 
+ 2: 00007FF790FB181F 
+ 3: 00007FF7922295C6 
+ 4: 00007FF791BC0CA3 
+ 5: 00007FF791BAD8D6 
+ 6: 00007FF7919FAA20 
+ 7: 00007FF7919C29DA 
+ 8: 00007FF7919C2FF0 
+ 9: 00007FF7919C2CF5 
+10: 00007FF7919A87D3 
+11: 00007FF7919E8D36 
+12: 00007FF7919E89C0 
+13: 00007FF7919E8108 
+14: 00007FF7919E7861 
+15: 00007FF791A0D221 
+16: 00007FF791A0DB88 
+17: 00007FF7916B67FF 
+18: 00007FF7916B80E6 
+19: 00007FF7916B2B05 
+20: 00007FF7916B799C 
+21: 00007FF7916B8202 
+22: 00007FF7916B2B05 
+23: 00007FF7916B799C 
+24: 00007FF7916B8202 
+25: 00007FF7916B2B05 
+26: 00007FF7916B799C 
+27: 00007FF7916B8202 
+28: 00007FF7916B2B05 
+29: 00007FF7916B799C 
+30: 00007FF7916B8202 
+31: 00007FF7916B3A07 
+32: 00007FF7916B87AF 
+33: 00007FF791A0090C 
+34: 00007FF791693A31 
+35: 00007FF791A6CF45 
+36: 00007FF79169B9D5 
+37: 00007FF791BB68A1 
+38: 00007FF79111696D 
+39: 00007FF790EEE58A 
+40: 00007FF790EF3FEA 
+41: 00007FF790EE88F5 
+42: 00007FF791137463 
+43: 00007FF792934C2E 
+44: 00007FFB8131E8D7 BaseThreadInitThunk+23
+45: 00007FFB823EC3FC RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF7910D711D 
+ 2: 00007FF79103A138 
+ 3: 00007FF791BC0C51 
+ 4: 00007FF791BAD8D6 
+ 5: 00007FF7919FAA20 
+ 6: 00007FF7919B3533 
+ 7: 00007FF791A03B6F 
+ 8: 00007FF7919F43B2 
+ 9: 00007FF7919EFDB5 
+10: 00007FF79137309D 
+
+
+#
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+#
+----- Native stack trace -----
+
+
+
+
+
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+
+
+
+
+
+<--- Last few GCs --->
+
+
+
+ 1: 00007FF7910D711D 
+
+
+<--- JS stacktrace --->
+<--- JS stacktrace --->
+<--- JS stacktrace --->
+ 2: 00007FF790FB181F 
+
+<--- JS stacktrace --->
+
+
+
+ 3: 00007FF7922295C6 
+<--- JS stacktrace --->
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+
+ 4: 00007FF791BC0CA3 
+
+
+----- Native stack trace -----
+----- Native stack trace -----
+
+ 5: 00007FF791BAD8D6 
+
+
+ 6: 00007FF7919FAA20 
+
+#
+
+
+#
+ 1: 00007FF7910D711D 
+#
+ 7: 00007FF7919C29DA 
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+ 2: 00007FF79103A138 
+ 1: 00007FF7910D711D 
+#
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+ 8: 00007FF7919C2FF0 
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+ 2: 00007FF79103A138 
+#
+ 3: 00007FF791BC0C51 
+#
+ 9: 00007FF7919C2CF5 
+----- Native stack trace -----
+ 3: 00007FF791BC0C51 
+----- Native stack trace -----
+ 4: 00007FF791BAD8D6 
+
+10: 00007FF7919B26DB 
+----- Native stack trace -----
+ 4: 00007FF791BAD8D6 
+
+ 5: 00007FF7919FAA20 
+11: 00007FF7919B1CAA 
+
+ 1: 00007FF7910D711D node::SetCppgcReference+17725
+ 5: 00007FF7919FAA20 
+ 6: 00007FF7919B3533 
+12: 00007FF791A08782 
+ 2: 00007FF790FB181F node::TriggerNodeReport+73231
+ 6: 00007FF7919B3533 
+ 1: 00007FF7910D711D node::SetCppgcReference+17725
+ 7: 00007FF791A03B6F 
+ 7: 00007FF791A03B6F 
+13: 00007FF791A6CAED 
+ 3: 00007FF7922295C6 v8::base::FatalOOM+54
+ 1: 00007FF7910D711D node::SetCppgcReference+17725
+ 2: 00007FF790FB181F node::TriggerNodeReport+73231
+ 2: 00007FF790FB181F node::TriggerNodeReport+73231
+ 8: 00007FF7919F43B2 
+14: 00007FF79169B9D5 
+ 4: 00007FF791BC0CA3 v8::Isolate::ReportExternalAllocationLimitReached+147
+ 8: 00007FF7919F43B2 
+ 3: 00007FF7922295C6 v8::base::FatalOOM+54
+ 3: 00007FF7922295C6 v8::base::FatalOOM+54
+ 9: 00007FF7919EFDB5 
+15: 00007FF791BB68A1 
+ 5: 00007FF791BAD8D6 v8::Function::Experimental_IsNopFunction+2870
+ 9: 00007FF7919EFDB5 
+ 4: 00007FF791BC0CA3 v8::Isolate::ReportExternalAllocationLimitReached+147
+ 4: 00007FF791BC0CA3 v8::Isolate::ReportExternalAllocationLimitReached+147
+10: 00007FF79137309D 
+16: 00007FF79111696D 
+ 6: 00007FF7919FAA20 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+31456
+10: 00007FF79137309D 
+ 5: 00007FF791BAD8D6 v8::Function::Experimental_IsNopFunction+2870
+ 5: 00007FF791BAD8D6 v8::Function::Experimental_IsNopFunction+2870
+17: 00007FF790EEE58A 
+ 7: 00007FF7919C29DA v8::CpuProfileNode::GetScriptResourceNameStr+3146
+ 6: 00007FF7919FAA20 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+31456
+ 6: 00007FF7919FAA20 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+31456
+18: 00007FF790EF3FEA 
+ 8: 00007FF7919C2FF0 v8::CpuProfileNode::GetScriptResourceNameStr+4704
+ 7: 00007FF7919C29DA v8::CpuProfileNode::GetScriptResourceNameStr+3146
+ 7: 00007FF7919C29DA v8::CpuProfileNode::GetScriptResourceNameStr+3146
+19: 00007FF790EE88F5 
+ 9: 00007FF7919C2CF5 v8::CpuProfileNode::GetScriptResourceNameStr+3941
+ 8: 00007FF7919C2FF0 v8::CpuProfileNode::GetScriptResourceNameStr+4704
+ 8: 00007FF7919C2FF0 v8::CpuProfileNode::GetScriptResourceNameStr+4704
+20: 00007FF791137463 
+10: 00007FF7919A87D3 v8::FixedArray::Length+85907
+ 9: 00007FF7919C2CF5 v8::CpuProfileNode::GetScriptResourceNameStr+3941
+ 9: 00007FF7919C2CF5 v8::CpuProfileNode::GetScriptResourceNameStr+3941
+21: 00007FF792934C2E 
+11: 00007FF7919E8D36 v8::CpuProfileNode::GetScriptResourceNameStr+159654
+10: 00007FF7919A87D3 v8::FixedArray::Length+85907
+10: 00007FF7919A87D3 v8::FixedArray::Length+85907
+22: 00007FFB8131E8D7 BaseThreadInitThunk+23
+12: 00007FF7919E89C0 v8::CpuProfileNode::GetScriptResourceNameStr+158768
+11: 00007FF7919E8D36 v8::CpuProfileNode::GetScriptResourceNameStr+159654
+11: 00007FF7919E8D36 v8::CpuProfileNode::GetScriptResourceNameStr+159654
+23: 00007FFB823EC3FC RtlUserThreadStart+44
+13: 00007FF7919E8108 v8::CpuProfileNode::GetScriptResourceNameStr+156536
+12: 00007FF7919E89C0 v8::CpuProfileNode::GetScriptResourceNameStr+158768
+12: 00007FF7919E89C0 v8::CpuProfileNode::GetScriptResourceNameStr+158768
+14: 00007FF7919E7861 v8::CpuProfileNode::GetScriptResourceNameStr+154321
+13: 00007FF7919E8108 v8::CpuProfileNode::GetScriptResourceNameStr+156536
+13: 00007FF7919E8108 v8::CpuProfileNode::GetScriptResourceNameStr+156536
+15: 00007FF791A0D221 v8::Isolate::GetHeapProfiler+7601
+14: 00007FF7919E7861 v8::CpuProfileNode::GetScriptResourceNameStr+154321
+14: 00007FF7919E7861 v8::CpuProfileNode::GetScriptResourceNameStr+154321
+16: 00007FF791A0DB88 v8::Isolate::GetHeapProfiler+10008
+15: 00007FF791A0D221 v8::Isolate::GetHeapProfiler+7601
+15: 00007FF7916B6787 v8::base::AddressSpaceReservation::AddressSpaceReservation+121463
+17: 00007FF7916B67FF v8::base::AddressSpaceReservation::AddressSpaceReservation+121583
+16: 00007FF791A0DB88 v8::Isolate::GetHeapProfiler+10008
+16: 00007FF7916B80E6 v8::base::AddressSpaceReservation::AddressSpaceReservation+127958
+18: 00007FF7916B80E6 v8::base::AddressSpaceReservation::AddressSpaceReservation+127958
+17: 00007FF7916B67FF v8::base::AddressSpaceReservation::AddressSpaceReservation+121583
+17: 00007FF7916B3A07 v8::base::AddressSpaceReservation::AddressSpaceReservation+109815
+19: 00007FF7916B2B05 v8::base::AddressSpaceReservation::AddressSpaceReservation+105973
+18: 00007FF7916B80E6 v8::base::AddressSpaceReservation::AddressSpaceReservation+127958
+18: 00007FF7916B87AF v8::base::AddressSpaceReservation::AddressSpaceReservation+129695
+
+20: 00007FF7916B799C v8::base::AddressSpaceReservation::AddressSpaceReservation+126092
+19: 00007FF7916B3A07 v8::base::AddressSpaceReservation::AddressSpaceReservation+109815
+<--- Last few GCs --->
+19: 00007FF7916933C4 v8::internal::Version::GetString+92372
+21: 00007FF7916B8202 v8::base::AddressSpaceReservation::AddressSpaceReservation+128242
+20: 00007FF7916B87AF v8::base::AddressSpaceReservation::AddressSpaceReservation+129695
+
+20: 00007FF7916AB9AA v8::base::AddressSpaceReservation::AddressSpaceReservation+76954
+22: 00007FF7916B2B05 v8::base::AddressSpaceReservation::AddressSpaceReservation+105973
+21: 00007FF7916933C4 v8::internal::Version::GetString+92372
+[57440:00000233B9D5B000]       61 ms: Scavenge 3.5 (5.1) -> 3.2 (5.6) MB, pooled: 0 MB, 1.97 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+21: 00007FF791693A3D v8::internal::Version::GetString+94029
+23: 00007FF7916B799C v8::base::AddressSpaceReservation::AddressSpaceReservation+126092
+22: 00007FF791A009F9 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+55993
+
+22: 00007FF791A6CF45 v8::base::CPU::has_sse41+75605
+24: 00007FF7916B8202 v8::base::AddressSpaceReservation::AddressSpaceReservation+128242
+23: 00007FF791693A31 v8::internal::Version::GetString+94017
+
+23: 00007FF79169B9D5 v8::base::AddressSpaceReservation::AddressSpaceReservation+11461
+25: 00007FF7916B2B05 v8::base::AddressSpaceReservation::AddressSpaceReservation+105973
+24: 00007FF791A6CF45 v8::base::CPU::has_sse41+75605
+<--- JS stacktrace --->
+24: 00007FF791BB68A1 v8::Isolate::Initialize+433
+26: 00007FF7916B799C v8::base::AddressSpaceReservation::AddressSpaceReservation+126092
+25: 00007FF79169B9D5 v8::base::AddressSpaceReservation::AddressSpaceReservation+11461
+
+25: 00007FF79111696D node::NewContext+397
+27: 00007FF7916B8202 v8::base::AddressSpaceReservation::AddressSpaceReservation+128242
+26: 00007FF791BB68A1 v8::Isolate::Initialize+433
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+26: 00007FF790EEE58A X509_CRL_get_meth_data+146010
+28: 00007FF7916B2B05 v8::base::AddressSpaceReservation::AddressSpaceReservation+105973
+27: 00007FF79111696D node::NewContext+397
+----- Native stack trace -----
+27: 00007FF790EF3FEA X509_CRL_get_meth_data+169146
+29: 00007FF7916B799C v8::base::AddressSpaceReservation::AddressSpaceReservation+126092
+28: 00007FF790EEE58A X509_CRL_get_meth_data+146010
+
+28: 00007FF790EE88F5 X509_CRL_get_meth_data+122309
+29: 00007FF790EF3FEA X509_CRL_get_meth_data+169146
+30: 00007FF7916B8202 v8::base::AddressSpaceReservation::AddressSpaceReservation+128242
+ 1: 00007FF7910D711D node::SetCppgcReference+17725
+29: 00007FF791137463 uv_poll_stop+291
+31: 00007FF7916B2B05 v8::base::AddressSpaceReservation::AddressSpaceReservation+105973
+30: 00007FF790EE88F5 X509_CRL_get_meth_data+122309
+ 2: 00007FF79103A138 SSL_get_quiet_shutdown+92344
+30: 00007FF792934C2E inflateValidate+159742
+
+32: 00007FF7916B799C v8::base::AddressSpaceReservation::AddressSpaceReservation+126092
+31: 00007FF791137463 uv_poll_stop+291
+ 3: 00007FF791BC0C51 v8::Isolate::ReportExternalAllocationLimitReached+65
+31: 00007FFB8131E8D7 BaseThreadInitThunk+23
+<--- Last few GCs --->
+33: 00007FF7916B8202 v8::base::AddressSpaceReservation::AddressSpaceReservation+128242
+32: 00007FF792934C2E inflateValidate+159742
+ 4: 00007FF791BAD8D6 v8::Function::Experimental_IsNopFunction+2870
+32: 00007FFB823EC3FC RtlUserThreadStart+44
+
+34: 00007FF7916B3A07 v8::base::AddressSpaceReservation::AddressSpaceReservation+109815
+33: 00007FFB8131E8D7 BaseThreadInitThunk+23
+ 5: 00007FF7919FAA20 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+31456
+35: 00007FF7916B87AF v8::base::AddressSpaceReservation::AddressSpaceReservation+129695
+
+34: 00007FFB823EC3FC RtlUserThreadStart+44
+ 6: 00007FF7919D8502 v8::CpuProfileNode::GetScriptResourceNameStr+92018
+36: 00007FF791A0090C v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+55756
+<--- JS stacktrace --->
+ 7: 00007FF791A015EB v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+59051
+37: 00007FF791693A31 v8::internal::Version::GetString+94017
+
+ 8: 00007FF791A03BDB v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+68763
+38: 00007FF791A6CF45 v8::base::CPU::has_sse41+75605
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 9: 00007FF7919F43B2 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+5234
+39: 00007FF79169B9D5 v8::base::AddressSpaceReservation::AddressSpaceReservation+11461
+----- Native stack trace -----
+10: 00007FF7919EFDB5 v8::CpuProfileNode::GetScriptResourceNameStr+188453
+
+40: 00007FF791BB68A1 v8::Isolate::Initialize+433
+11: 00007FF79137309D BIO_ssl_shutdown+189
+41: 00007FF79111696D node::NewContext+397
+42: 00007FF790EEE58A X509_CRL_get_meth_data+146010
+43: 00007FF790EF3FEA X509_CRL_get_meth_data+169146
+44: 00007FF790EE88F5 X509_CRL_get_meth_data+122309
+45: 00007FF791137463 uv_poll_stop+291
+46: 00007FF792934C2E inflateValidate+159742
+47: 00007FFB8131E8D7 BaseThreadInitThunk+23
+48: 00007FFB823EC3FC 
+ 1: 00007FF7910D711D node::SetCppgcReference+17725
+ 2: 00007FF79103A138 SSL_get_quiet_shutdown+92344
+ 3: 00007FF791BC0C51 v8::Isolate::ReportExternalAllocationLimitReached+65
+ 4: 00007FF791BAD8D6 v8::Function::Experimental_IsNopFunction+2870
+ 5: 00007FF7919FAA20 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+31456
+ 6: 00007FF7919B3533 v8::FixedArray::Length+130291
+ 7: 00007FF791A03B6F v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+68655
+ 8: 00007FF7919F43B2 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+5234
+ 9: 00007FF7919EFDB5 v8::CpuProfileNode::GetScriptResourceNameStr+188453
+10: 00007FF79137309D BIO_ssl_shutdown+189
+
+<--- Last few GCs --->
+
+[55612:000001F086791000]      148 ms: Scavenge 6.4 (8.0) -> 6.3 (10.8) MB, pooled: 0 MB, 1.64 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[55612:000001F086791000]      268 ms: Scavenge 9.2 (11.6) -> 8.4 (11.9) MB, pooled: 0 MB, 1.69 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+
+<--- Last few GCs --->
+
+
+
+
+#
+<--- JS stacktrace --->
+[38652:00000219A0713000]      150 ms: Scavenge 6.4 (8.0) -> 6.3 (11.0) MB, pooled: 0 MB, 1.57 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+# Fatal error in , line 0
+
+[38652:00000219A0713000]     1325 ms: Scavenge 9.2 (11.6) -> 8.4 (11.9) MB, pooled: 0 MB, 0.80 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+#
+# Check failed: (result.ptr) != nullptr.
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+
+# Fatal process out of memory: Zone
+#
+----- Native stack trace -----
+
+#
+#
+
+<--- JS stacktrace --->
+----- Native stack trace -----
+#
+
+
+#FailureMessage Object: 0000005A705FF0E0
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+----- Native stack trace -----
+ 1: 00007FF7910D711D 
+
+
+ 2: 00007FF79103A138 
+ 3: 00007FF791BC0C51 
+ 4: 00007FF791BAD8D6 
+ 5: 00007FF7919FAA20 
+ 1: 00007FF7910D711D 
+ 1: 00007FF7910D711D 
+ 1: 00007FF7910D711D 
+ 6: 00007FF7919D8502 
+ 2: 00007FF790FB181F 
+ 2: 00007FF790FB181F 
+ 2: 00007FF79103A138 
+ 3: 00007FF7922295C6 
+ 3: 00007FF7922299E5 
+ 7: 00007FF791A015EB 
+ 8: 00007FF791A03BDB 
+ 3: 00007FF791BC0C51 
+ 4: 00007FF79199D3BB 
+ 4: 00007FF791BAD6E1 
+ 4: 00007FF791BAD8D6 
+ 9: 00007FF7919F43B2 
+ 5: 00007FF79199EAD5 
+ 5: 00007FF79167C79B 
+ 5: 00007FF7919FAA20 
+10: 00007FF7919EFDB5 
+ 6: 00007FF791998602 
+ 6: 00007FF7913F29F7 
+ 6: 00007FF7919D8502 
+11: 00007FF79137309D 
+ 7: 00007FF791995667 
+ 7: 00007FF7926D653B 
+ 7: 00007FF791A015EB 
+12: 7FF8000000000000 
+ 8: 00007FF7919954FF 
+ 8: 00007FF7926ED710 
+ 8: 00007FF791A03BDB 
+ 9: 00007FF791995A13 
+ 9: 00007FF7926ED943 
+ 9: 00007FF7919F43B2 
+10: 00007FF7926ED911 
+10: 00007FF79199EF80 
+
+10: 00007FF7919EFDB5 
+11: 00007FF79199E8B9 
+11: 00007FF7926EB1E7 
+<--- Last few GCs --->
+11: 00007FF79137309D 
+12: 00007FF79199ED80 
+12: 00007FF79271280E 
+
+12: 7FF8000000000000 
+13: 00007FF791DB24F5 
+13: 00007FF792707C99 
+
+14: 00007FF790FB4540 
+14: 00007FF7926DDAFA 
+<--- JS stacktrace --->
+15: 00007FF791137463 
+15: 00007FF7926DB6B3 
+
+16: 00007FF792934C2E 
+16: 00007FF7926DAC7E 
+
+17: 00007FFB8131E8D7 BaseThreadInitThunk+23
+17: 00007FF79271FBEF 
+
+18: 00007FFB823EC3FC 
+18: 00007FF7923469AF 
+#
+19: 00007FF79234064A 
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+20: 00007FF791B28314 
+#
+21: 00007FF791AE1C22 
+----- Native stack trace -----
+22: 00007FF791DB24F5 
+
+23: 00007FF790FB4540 
+24: 00007FF791137463 
+ 1: 00007FF7910D711D 
+25: 00007FF792934C2E 
+ 2: 00007FF790FB181F 
+26: 00007FFB8131E8D7 BaseThreadInitThunk+23
+ 3: 00007FF7922295C6 
+27: 00007FFB823EC3FC RtlUserThreadStart+44
+ 4: 00007FF791BC0CA3 
+ 5: 00007FF791BAD8D6 
+ 6: 00007FF7919FAA20 
+ 7: 00007FF7919C29DA 
+ 8: 00007FF7919C2FF0 
+ 9: 00007FF7919C2CF5 
+10: 00007FF7919A87D3 
+11: 00007FF7919E8D36 
+12: 00007FF7919E89C0 
+13: 00007FF7919E8108 
+14: 00007FF7919E7861 
+15: 00007FF791A0D221 
+16: 00007FF791A0DB88 
+17: 00007FF7916B67FF 
+18: 00007FF7916B80E6 
+19: 00007FF7916B2B05 
+20: 00007FF7916B799C 
+21: 00007FF7916B8202 
+22: 00007FF7916B2B05 
+23: 00007FF7916B799C 
+24: 00007FF7916B8202 
+25: 00007FF7916B2B05 
+26: 00007FF7916B799C 
+27: 00007FF7916B8202 
+28: 00007FF7916B2B05 
+29: 00007FF7916B799C 
+30: 00007FF7916B8202 
+31: 00007FF7916B3A07 
+32: 00007FF7916B87AF 
+33: 00007FF791A0090C 
+34: 00007FF791693A31 
+35: 00007FF791A6CF45 
+36: 00007FF79169B9D5 
+37: 00007FF791BB68A1 
+38: 00007FF79111696D 
+39: 00007FF790EEE58A 
+40: 00007FF790EF3FEA 
+41: 00007FF790EE88F5 
+42: 00007FF791137463 
+43: 00007FF792934C2E 
+44: 00007FFB8131E8D7 BaseThreadInitThunk+23
+45: 00007FFB823EC3FC RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+
+<--- JS stacktrace --->
+
+
+
+#
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+#
+----- Native stack trace -----
+
+ 1: 00007FF7910D711D 
+ 2: 00007FF790FB181F 
+ 3: 00007FF7922295C6 
+ 4: 00007FF791BC0CA3 
+ 5: 00007FF791BAD8D6 
+ 6: 00007FF7919FAA20 
+ 7: 00007FF7919C29DA 
+ 8: 00007FF7919C2FF0 
+ 9: 00007FF7919C2CF5 
+10: 00007FF7919A87D3 
+11: 00007FF7919E8D36 
+12: 00007FF7919E89C0 
+13: 00007FF7919E8108 
+14: 00007FF7919E7861 
+15: 00007FF791A0D221 
+16: 00007FF791A0DB88 
+17: 00007FF7916B67FF 
+18: 00007FF7916B80E6 
+19: 00007FF7916B2B05 
+20: 00007FF7916B799C 
+21: 00007FF7916B8202 
+22: 00007FF7916B2B05 
+23: 00007FF7916B799C 
+24: 00007FF7916B8202 
+25: 00007FF7916B2B05 
+26: 00007FF7916B799C 
+27: 00007FF7916B8202 
+28: 00007FF7916B2B05 
+29: 00007FF7916B799C 
+30: 00007FF7916B8202 
+31: 00007FF7916B2B05 
+32: 00007FF7916B799C 
+33: 00007FF7916B8202 
+34: 00007FF7916B3A07 
+35: 00007FF7916B87AF 
+36: 00007FF791A0090C 
+37: 00007FF791693A31 
+38: 00007FF791A6CF45 
+39: 00007FF79169B9D5 
+40: 00007FF791BB68A1 
+41: 00007FF79111696D 
+42: 00007FF790EEE58A 
+43: 00007FF790EF3FEA 
+44: 00007FF790EE88F5 
+45: 00007FF791137463 
+46: 00007FF792934C2E 
+47: 00007FFB8131E8D7 BaseThreadInitThunk+23
+48: 00007FFB823EC3FC RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+[16576:000001DEABF81000]      172 ms: Scavenge 6.4 (8.0) -> 6.3 (10.8) MB, pooled: 0 MB, 1.56 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[16576:000001DEABF81000]     1287 ms: Scavenge 9.2 (11.6) -> 8.4 (11.9) MB, pooled: 0 MB, 1.08 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+
+<--- Last few GCs --->
+
+[57956:000001B1A8549000]      136 ms: Scavenge 6.4 (8.0) -> 5.6 (10.0) MB, pooled: 0 MB, 1.70 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[57956:000001B1A8549000]      282 ms: Scavenge 8.5 (10.8) -> 7.6 (11.3) MB, pooled: 0 MB, 2.58 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+<--- JS stacktrace --->
+ 1: 00007FF7910D711D 
+
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+ 2: 00007FF79103A138 
+----- Native stack trace -----
+ 3: 00007FF791BC0C51 
+
+ 4: 00007FF791BAD8D6 
+ 5: 00007FF7919FAA20 
+ 6: 00007FF7919D8502 
+ 7: 00007FF791A015EB 
+ 8: 00007FF791A03BDB 
+ 9: 00007FF7919F43B2 
+ 1: 00007FF7910D711D 
+10: 00007FF7919EFDB5 
+ 2: 00007FF79103A138 
+11: 00007FF79137309D 
+ 3: 00007FF791BC0C51 
+12: 7FF8000000000000 
+ 4: 00007FF791BAD8D6 
+ 5: 00007FF7919FAA20 
+ 6: 00007FF7919D8502 
+ 7: 00007FF791A015EB 
+ 8: 00007FF791A03BDB 
+ 9: 00007FF7919F43B2 
+10: 00007FF7919EFDB5 
+11: 00007FF79137309D 
+12: 7FF8000000000000 
+
+
+#
+# Fatal error in , line 0
+# Check failed: (result.ptr) != nullptr.
+#
+#
+#
+#FailureMessage Object: 0000000702FFF4C0
+----- Native stack trace -----
+
+ 1: 00007FF7910D711D 
+ 2: 00007FF790FB181F 
+ 3: 00007FF7922299E5 
+ 4: 00007FF79199D3BB 
+ 5: 00007FF79199EAD5 
+ 6: 00007FF791998602 
+ 7: 00007FF791995667 
+ 8: 00007FF7919954FF 
+ 9: 00007FF791995A13 
+10: 00007FF79199EF80 
+11: 00007FF79199E8B9 
+12: 00007FF79199ED80 
+13: 00007FF791DB24F5 
+14: 00007FF790FB4540 
+15: 00007FF791137463 
+16: 00007FF792934C2E 
+17: 00007FFB8131E8D7 BaseThreadInitThunk+23
+18: 00007FFB823EC3FC RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+[11148:00000198E505B000]     1064 ms: Scavenge 3.5 (5.1) -> 3.2 (5.6) MB, pooled: 0 MB, 0.72 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[11148:00000198E505B000]     2104 ms: Scavenge 4.2 (5.8) -> 3.9 (6.3) MB, pooled: 0 MB, 1006.16 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[11148:00000198E505B000]     5144 ms: Scavenge 4.9 (6.6) -> 4.7 (7.1) MB, pooled: 0 MB, 3012.88 / 0.00 ms  (average mu = 1.000, current mu = 1.000) task; 
+
+
+<--- JS stacktrace --->
+
+<--- Last few GCs --->
+
+[58380:000002CBEFD69000]     2110 ms: Scavenge 6.4 (8.0) -> 6.4 (10.8) MB, pooled: 0 MB, 0.77 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[58380:000002CBEFD69000]     8206 ms: Scavenge 9.2 (11.6) -> 8.4 (11.9) MB, pooled: 0 MB, 3009.28 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+
+<--- Last few GCs --->
+
+[14000:000002998A511000]     2133 ms: Scavenge 6.4 (8.0) -> 6.3 (10.8) MB, pooled: 0 MB, 1.58 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF7910D711D 
+ 2: 00007FF79103A138 
+ 3: 00007FF791BC0C51 
+ 4: 00007FF791BAD8D6 
+ 5: 00007FF7919FAA20 
+ 6: 00007FF7919D8502 
+ 7: 00007FF791A015EB 
+ 8: 00007FF791A03BDB 
+ 9: 00007FF7919F43B2 
+10: 00007FF7919EFDB5 
+11: 00007FF79137309D 
+12: 7FF8000000000000 
+ 1: 00007FF7910D711D node::SetCppgcReference+17725
+ 2: 00007FF79103A138 SSL_get_quiet_shutdown+92344
+ 3: 00007FF791BC0C51 v8::Isolate::ReportExternalAllocationLimitReached+65
+ 4: 00007FF791BAD8D6 v8::Function::Experimental_IsNopFunction+2870
+ 5: 00007FF7919FAA20 v8::internal::StrongRootAllocatorBase::StrongRootAllocatorBase+31456
+ 6: 00007FF7919CE5EF v8::CpuProfileNode::GetScriptResourceNameStr+51295
+ 7: 00007FF7919DF77A v8::CpuProfileNode::GetScriptResourceNameStr+121322
+ 8: 00007FF7919D6B2E v8::CpuProfileNode::GetScriptResourceNameStr+85406
+ 9: 00007FF7919DCE69 v8::CpuProfileNode::GetScriptResourceNameStr+110809
+10: 00007FF7919E1304 v8::CpuProfileNode::GetScriptResourceNameStr+128372
+11: 00007FF791DB24F5 v8::PropertyDescriptor::writable+1997013
+12: 00007FF790FB4540 v8::CpuProfileNode::GetParent+784
+13: 00007FF791137463 uv_poll_stop+291
+14: 00007FF792934C2E inflateValidate+159742
+15: 00007FFB8131E8D7 BaseThreadInitThunk+23
+16: 00007FFB823EC3FC RtlUserThreadStart+44
+⨯ Error: Could not find the module "[project]/Testing/job-application-tracker/my-nextproject/node_modules/next/dist/client/components/builtin/global-error.js#default" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '2249449'
+}
+⨯ Error: Could not find the module "[project]/Testing/job-application-tracker/my-nextproject/node_modules/next/dist/client/components/builtin/global-error.js#default" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '4027928101'
+}
+[0m[7m Server [0m Error: Could not find the module "[project]/Testing/job-application-tracker/my-nextproject/node_modules/next/dist/client/components/builtin/global-error.js#default" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>:1:18) {
+  environmentName: 'Server',
+  digest: '4027928101'
+}
+⨯ Error: Could not find the module "[project]/Testing/job-application-tracker/my-nextproject/node_modules/next/dist/client/components/builtin/global-error.js#default" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>:1:18) {
+  environmentName: 'Server',
+  digest: '4027928101'
+}
+⨯ Error: Could not find the module "[project]/Testing/job-application-tracker/my-nextproject/node_modules/next/dist/client/components/builtin/global-error.js#default" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>:1:18) {
+  environmentName: 'Server',
+  digest: '4027928101',
+  page: '/'
+}
+⨯ Error: Failed to load external module @swc/helpers-2dc6974dfd337350/_/_interop_require_default: Error: Cannot find module '@swc/helpers-2dc6974dfd337350/_/_interop_require_default'
+Require stack:
+- C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\.next\dev\server\chunks\ssr\[root-of-the-server]__0.0-m9p._.js
+- C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\.next\dev\server\chunks\ssr\[turbopack]_runtime.js
+- C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\.next\dev\server\app\page.js
+- C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\node_modules\next\dist\server\require.js
+- C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\node_modules\next\dist\server\load-components.js
+- C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\node_modules\next\dist\build\utils.js
+- C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\node_modules\next\dist\server\lib\start-server.js
+    at module evaluation (C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\.next\dev\server\chunks\ssr\[root-of-the-server]__0.0-m9p._.js:28:35)
+    at Object.<anonymous> (C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\.next\dev\server\pages\_document.js:3:3)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Lenovo\AppData\Local\Temp\next-panic-c167df51f3fcb7ff5aa694c827eebc2b.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20failed%20to%20write%20to%20%22C%3A%5C%5CUsers%5C%5CLenovo%5C%5CTesting%5C%5Cjob-application-tracker%5C%5Cmy-nextproject%5C%5C.next%5C%5Cdev%5C%5Cserver%5C%5Capp%5C%5Cpage_client-reference-manifest.js%22&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0Afailed%20to%20write%20to%20%22C%3A%5C%5CUsers%5C%5CLenovo%5C%5CTesting%5C%5Cjob-application-tracker%5C%5Cmy-nextproject%5C%5C.next%5C%5Cdev%5C%5Cserver%5C%5Capp%5C%5Cpage_client-reference-manifest.js%22%0A%0ACaused%20by%3A%0A-%20The%20requested%20operation%20cannot%20be%20performed%20on%20a%20file%20with%20a%20user-mapped%20section%20open.%20%28os%20error%201224%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Lenovo\AppData\Local\Temp\next-panic-c167df51f3fcb7ff5aa694c827eebc2b.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20failed%20to%20write%20to%20%22C%3A%5C%5CUsers%5C%5CLenovo%5C%5CTesting%5C%5Cjob-application-tracker%5C%5Cmy-nextproject%5C%5C.next%5C%5Cdev%5C%5Cserver%5C%5Capp%5C%5Cpage_client-reference-manifest.js%22&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0Afailed%20to%20write%20to%20%22C%3A%5C%5CUsers%5C%5CLenovo%5C%5CTesting%5C%5Cjob-application-tracker%5C%5Cmy-nextproject%5C%5C.next%5C%5Cdev%5C%5Cserver%5C%5Capp%5C%5Cpage_client-reference-manifest.js%22%0A%0ACaused%20by%3A%0A-%20The%20requested%20operation%20cannot%20be%20performed%20on%20a%20file%20with%20a%20user-mapped%20section%20open.%20%28os%20error%201224%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Lenovo\AppData\Local\Temp\next-panic-c167df51f3fcb7ff5aa694c827eebc2b.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20reading%20file%20C%3A%5CUsers%5CLenovo%5CTesting%5Cjob-application-tracker%5Cmy-nextproject%5C.next%5Cdev%5Cserver%5Cpages%5C_app%5Cbuild-manifest.json&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0Areading%20file%20C%3A%5CUsers%5CLenovo%5CTesting%5Cjob-application-tracker%5Cmy-nextproject%5C.next%5Cdev%5Cserver%5Cpages%5C_app%5Cbuild-manifest.json%0A%0ACaused%20by%3A%0A-%20Insufficient%20system%20resources%20exist%20to%20complete%20the%20requested%20service.%20%28os%20error%201450%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Lenovo\AppData\Local\Temp\next-panic-c167df51f3fcb7ff5aa694c827eebc2b.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20reading%20file%20C%3A%5CUsers%5CLenovo%5CTesting%5Cjob-application-tracker%5Cmy-nextproject%5C.next%5Cdev%5Cserver%5Cpages%5C_app%5Cbuild-manifest.json&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0Areading%20file%20C%3A%5CUsers%5CLenovo%5CTesting%5Cjob-application-tracker%5Cmy-nextproject%5C.next%5Cdev%5Cserver%5Cpages%5C_app%5Cbuild-manifest.json%0A%0ACaused%20by%3A%0A-%20Insufficient%20system%20resources%20exist%20to%20complete%20the%20requested%20service.%20%28os%20error%201450%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+[Server HMR] Subscription error: Error [TurbopackInternalError]: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js"
+
+Caused by:
+- The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+    at <unknown> (TurbopackInternalError: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js") {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js"
+
+Caused by:
+- The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+    at <unknown> (TurbopackInternalError: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js") {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js"
+
+Caused by:
+- The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+    at <unknown> (TurbopackInternalError: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js") {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js"
+
+Caused by:
+- The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+    at <unknown> (TurbopackInternalError: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js") {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js"
+
+Caused by:
+- The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+    at <unknown> (TurbopackInternalError: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js") {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js"
+
+Caused by:
+- The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+    at <unknown> (TurbopackInternalError: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js") {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js"
+
+Caused by:
+- The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+    at <unknown> (TurbopackInternalError: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js") {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js"
+
+Caused by:
+- The requested operation cannot be performed on a file with a user-mapped section open. (os error 1224)
+    at <unknown> (TurbopackInternalError: failed to write to "C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject\\.next\\dev\\server\\app\\page_client-reference-manifest.js") {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: reading file C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\.next\dev\server\pages\_app\build-manifest.json
+
+Caused by:
+- Insufficient system resources exist to complete the requested service. (os error 1450)
+    at <unknown> (TurbopackInternalError: reading file C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\.next\dev\server\pages\_app\build-manifest.json) {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: reading file C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\.next\dev\server\pages\_app\build-manifest.json
+
+Caused by:
+- Insufficient system resources exist to complete the requested service. (os error 1450)
+    at <unknown> (TurbopackInternalError: reading file C:\Users\Lenovo\Testing\job-application-tracker\my-nextproject\.next\dev\server\pages\_app\build-manifest.json) {
+  location: undefined
+}
+
+thread 'tokio-runtime-worker' (48404) panicked at crates\next-napi-bindings\src\next_api\turbopack_ctx.rs:323:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }
+
+thread 'tokio-runtime-worker' (52508) panicked at crates\next-napi-bindings\src\next_api\turbopack_ctx.rs:323:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }
+
+thread 'tokio-runtime-worker' (48404) panicked at crates\next-napi-bindings\src\next_api\turbopack_ctx.rs:323:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }
+
+thread 'tokio-runtime-worker' (52508) panicked at crates\next-napi-bindings\src\next_api\turbopack_ctx.rs:323:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }
+
+thread 'tokio-runtime-worker' (52508) panicked at crates\next-napi-bindings\src\next_api\turbopack_ctx.rs:323:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }
+
+thread 'tokio-runtime-worker' (50164) panicked at crates\next-napi-bindings\src\next_api\turbopack_ctx.rs:323:51:
+called `Result::unwrap()` on an `Err` value: PoisonError { .. }

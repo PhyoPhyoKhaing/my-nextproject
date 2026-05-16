@@ -1,0 +1,17 @@
+
+> my-nextproject@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.235:3000
+✓ Ready in 842ms
+Creating turbopack project {
+  dir: 'C:\\Users\\Lenovo\\Testing\\job-application-tracker\\my-nextproject',
+  testMode: true
+}
+
+○ Compiling / ...
+✓ Finished writing to filesystem cache in 12.6s
+✓ Finished writing to filesystem cache in 20.4s
+○ Compiling /_error ...
